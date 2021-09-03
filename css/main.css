@@ -1,0 +1,302 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #262626;
+  letter-spacing: 2px;
+  font-weight: 100; }
+
+.main-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+.sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  text-transform: uppercase; }
+
+.main-heading {
+  font-family: "Dancing Script", cursive;
+  color: #d3ab55;
+  font-size: 80px; }
+
+.sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+  font-weight: lighter; }
+
+.main-btn {
+  color: #d3ab55;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px; }
+
+.card-overlay-btn {
+  color: #d3ab55;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+.description {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  font-weight: initial;
+  color: #bbb;
+  font-size: 18px;
+  letter-spacing: initial; }
+
+.fa-star-of-life {
+  color: #d3ab55; }
+
+.footer-copyright-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #bbb; }
+
+.card-overlay-heading {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px; }
+
+.card-overlay-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: white; }
+
+.social-media-item {
+  list-style: none; }
+
+.social-media-link {
+  color: #bbb;
+  font-size: 50px;
+  transition: 0.7s; }
+  .social-media-link:hover {
+    color: #d3ab55; }
+
+.footer-copyright-paragraph {
+  font-size: 18px; }
+
+@media (max-width: 500px) {
+  .main-name {
+    font-size: 30px; }
+  .sub-name {
+    font-size: 10px; }
+  .main-heading {
+    font-size: 50px; }
+  .sub-heading {
+    font-size: 30px; }
+  .social-media-link {
+    font-size: 30px; }
+  .footer-copyright-paragraph {
+    font-size: 10px; } }
+
+@media (max-width: 912px) {
+  .card-overlay-heading {
+    font-size: 20px; }
+  .card-overlay-paragraph {
+    font-size: 15px; } }
+
+.fa-bars {
+  color: #d3ab55;
+  font-size: 50px;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  margin: 50px; }
+
+.logo {
+  font-size: 50px;
+  height: 110px;
+  width: 110px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%; }
+
+.logo img {
+  height: 100px; }
+
+.main-btn {
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  transition: 0.5s; }
+  .main-btn:hover {
+    background-color: #d3ab55;
+    color: black; }
+
+.card-overlay-btn {
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  background-color: white;
+  padding: 15px 20px;
+  margin: 20px; }
+
+@media (max-width: 500px) {
+  .fa-bars {
+    font-size: 30px;
+    margin: 30px; }
+  .logo {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #d3ab55;
+    border-radius: 50%; }
+  .logo img {
+    height: 60px; } }
+
+@media (max-width: 912px) {
+  .card-overlay-btn {
+    padding: 5px 10px; } }
+
+.header {
+  background-image: url(../images/bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  z-index: 0; }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #000000;
+    opacity: 0.7; }
+  .header .brand {
+    display: flex;
+    justify-content: center;
+    padding: 50px; }
+  .header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; }
+  .header .header-banner {
+    text-align: center; }
+  .header .sub-heading {
+    margin: 30px; }
+
+.about-us {
+  display: flex; }
+  .about-us .about-us-left {
+    left: -150px;
+    position: relative;
+    width: 40%; }
+  .about-us img {
+    width: 90%;
+    margin-top: 150px;
+    opacity: 0.7; }
+  .about-us .about-us-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; }
+    .about-us .about-us-right .main-heading {
+      margin: 30px 0; }
+    .about-us .about-us-right .sub-heading {
+      margin: 30px 0; }
+    .about-us .about-us-right .stars {
+      margin: 30px 0; }
+      .about-us .about-us-right .stars .fa-star-of-life {
+        margin: 5px; }
+    .about-us .about-us-right .description {
+      width: 70%;
+      text-align: justify;
+      text-indent: 30px; }
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery .card {
+  width: calc(100% / 3);
+  height: 30vw;
+  position: relative;
+  overflow: hidden; }
+  .gallery .card:hover .card-overlay {
+    left: 0; }
+  .gallery .card .card-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+    background-color: rgba(211, 171, 85, 0.5);
+    transition: 0.7s; }
+  .gallery .card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+    opacity: 0.5; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer .footer-header {
+    display: flex;
+    justify-content: center;
+    padding: 50px; }
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; }
+  .footer .social-media {
+    display: flex;
+    width: 350px;
+    justify-content: space-between; }
+  .footer .footer-copyright {
+    padding: 50px; }
+
+@media (max-width: 912px) {
+  .header {
+    height: 80vh; }
+  .about-us {
+    display: block;
+    text-align: center; }
+    .about-us .about-us-left {
+      display: none; }
+    .about-us img {
+      display: none; }
+    .about-us .about-us-right {
+      width: 80%;
+      margin: auto; } }

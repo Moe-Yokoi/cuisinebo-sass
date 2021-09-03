@@ -1,0 +1,177 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+
+body{
+  background-color: #262626;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+// Variables fot texts
+
+$fontN:'Nunito', sans-serif;
+$fontJ:'Josefin Sans', sans-serif;
+$fontD:'Dancing Script', cursive;
+$yellow:#d3ab55;
+$gray:#bbb;
+
+
+// Sizes and styles for texts
+
+
+
+
+
+.main-name{
+  font-family:$fontN;
+  font-size: 50px;
+  color: $gray;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.sub-name{
+  font-family: $fontJ;
+  font-size: 18px;
+  color:$gray;
+  text-transform: uppercase;
+}
+
+.main-heading{
+  font-family: $fontD;
+  color: $yellow;
+  font-size: 80px;
+}
+
+.sub-heading{
+  font-family: $fontJ;
+  font-size:50px;
+  color:$gray;
+  font-weight: lighter;
+}
+
+.main-btn{
+  color: $yellow;
+  text-transform: uppercase;
+  font-family: $fontJ;
+  letter-spacing: 1px;
+}
+
+.card-overlay-btn{
+  color: $yellow;
+  text-transform: uppercase;
+  font-family: $fontJ;
+  font-weight:bold;
+  letter-spacing: 1px;
+}
+
+.description{
+  font-family: $fontJ;
+  font-style: italic;
+  font-weight: initial;
+  color: $gray;
+  font-size: 18px;
+  letter-spacing: initial;
+}
+
+.fa-star-of-life{
+  color: $yellow;
+  
+}
+
+.footer-copyright-paragraph{
+  font-family: $fontJ;
+  font-size: 20px;
+  color: $gray;
+
+}
+
+.card-overlay-heading{
+   color: white;
+  font-family: $fontN;
+  font-size: 50px;
+}
+
+.card-overlay-paragraph{
+  font-family: $fontJ;
+  font-size:30px;
+  font-weight: 100;
+  color: white;
+}
+
+.social-media-item{
+  list-style: none;
+}
+
+.social-media-link{
+  color: $gray;
+  font-size: 50px;
+  transition: 0.7s;
+
+  &:hover{
+    color: $yellow;
+  }
+}
+
+.footer-copyright-paragraph{
+  font-size: 18px;
+}
+
+@media (max-width:500px){
+    .main-name{
+      font-size: 30px;
+    }
+    .sub-name{
+      font-size: 10px;
+    }
+    .main-heading{
+      font-size: 50px;
+    }
+    .sub-heading{
+      font-size: 30px;
+    }
+    .social-media-link{
+      font-size: 30px;
+    }
+    .footer-copyright-paragraph{
+      font-size: 10px;
+    }
+}
+
+@media (max-width:912px) {
+  .card-overlay-heading{
+    font-size: 20px;
+  }
+  .card-overlay-paragraph{
+    font-size: 15px;
+  }
+}
